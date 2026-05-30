@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "NutriSnap",
+    "slug": "nutrisnap-cal-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.nutrisnap",
+      "infoPlist": {
+        "NSCameraUsageDescription": "NutriSnap needs camera access to photograph your meals for AI analysis.",
+        "NSPhotoLibraryUsageDescription": "NutriSnap needs photo library access to analyze your meal photos.",
+        "NSPhotoLibraryAddUsageDescription": "NutriSnap needs permission to save photos."
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "package": "com.yourname.nutrisnap"
+    },
+    "web": {},
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow NutriSnap to access your camera to photograph meals."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow NutriSnap to access your photos for meal analysis."
+        }
+      ]
+    ]
+  }
+}
