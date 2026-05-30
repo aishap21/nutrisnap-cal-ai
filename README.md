@@ -23,7 +23,7 @@
 ### 1. Clone or download
 
 ```bash
-git clone <your-repo> nutrisnap
+git clone <my-repo> nutrisnap
 cd nutrisnap
 npm install
 ```
